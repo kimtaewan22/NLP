@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#7EB9E8"> <!-- Ripple Effect 색상 -->
+
+    <!-- 배경색 -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp"/> <!-- 둥근 모서리 설정 -->
+            <solid android:color="#272424"/>
+        </shape>
+    </item>
+
+</ripple>

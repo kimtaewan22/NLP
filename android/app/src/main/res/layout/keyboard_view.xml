@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/keyboardBackground">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/black">
+        <Button
+            android:id="@+id/spellCheck"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/keyboardDivider"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_ripple_effect"
+            android:text="맞춤법 검사"/>
+
+        <Button
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/keyboardDivider"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_ripple_effect"
+            android:text="문법 검사"/>
+
+        <Button
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/keyboardDivider"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_ripple_effect"
+            android:text="긍/부정 탐지"/>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/keyboard_frame"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

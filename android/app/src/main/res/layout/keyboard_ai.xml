@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- 여기에 키보드 레이아웃을 정의합니다. -->
+    <!-- 예를 들어, 버튼 등을 추가할 수 있습니다. -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/cardview_dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_margin="5dp"
+                    android:text="입력한 내용"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:id="@+id/inputText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="test"/>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="대치어는 다음과 같습니다"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:id="@+id/correctedText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="test"/>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <Button
+                    android:id="@+id/textToInsert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="복사하기"
+                    android:gravity="center"
+                    android:backgroundTint="@color/keyboardPressed"/>
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>
